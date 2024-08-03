@@ -32,7 +32,30 @@ const PersonSchema = mongoose.Schema(
         },
         image: {
             type: String,
-        }
+        },
+        designation: {
+            type: String,
+            required: true
+        },
+        company: {
+            type: String,
+            required: true
+        },
+        companyUrl: {
+            type: String,
+            required: true
+        },
+        phone: {
+            type: String
+        },
+        ipPhone: {
+            type: String
+        },
+        address: {
+            type: String,
+            required: true
+        },
+
     },
     {
         timestamps: true
